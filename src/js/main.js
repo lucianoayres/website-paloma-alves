@@ -36,8 +36,10 @@ function getThemeSwitchButton(theme) {
 	return document.body.querySelector(`#${theme}-theme-switch`)
 }
 
-function hideElement(element) {
-	element.style.display = 'none'
+function setElementDisplay(element, shouldDisplay) {
+	shouldDisplay
+		? (element.style.display = 'none')
+		: (element.style.display = 'initial')
 }
 
 function initTheme() {

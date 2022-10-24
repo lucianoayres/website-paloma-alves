@@ -311,6 +311,11 @@ nav [class*='fa-']:hover {
 	color: var(--secondary);
 }
 
+nav .button:hover,
+nav .button span:hover {
+	color: inherit;
+}
+
 nav .theme-toggle {
 	font-size: inherit;
 	font-family: var(--sans);
