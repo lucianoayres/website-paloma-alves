@@ -29,7 +29,7 @@
 		></script>
 		<script defer src="./js/main.js"></script>
 	</head>
-	<body>
+	<body data-theme="dark">
 		<header>
 			<a class="hamburger" href="#navbar" aria-label="Open main menu">
 				<span class="sr-only">Open main menu</span>
@@ -48,10 +48,11 @@
 					<li>
 						<a href="#projects">Projetos</a>
 					</li>
-					<li><a href="about.html">Sobre</a></li>
+
 					<li>
 						<a
 							href="mailto:palomaalves@gmail.com?subject=Contato Website | Paloma Alves"
+							title="contato"
 							><span class="fa-solid fa-envelope" aria-hidden="true"></span>
 							<span class="label">Contato</span></a
 						>
@@ -60,17 +61,51 @@
 						<a
 							href="https://www.linkedin.com/in/paloma-alves1006/"
 							target="_blank"
+							title="LinkedIn"
 							><span class="fa-brands fa-linkedin" aria-hidden="true"></span>
 							<span class="label">LinkedIn</span></a
 						>
 					</li>
 					<li>
-						<a href="https://github.com/palomaalves" target="_blank"
+						<a
+							href="https://github.com/palomaalves"
+							target="_blank"
+							title="Github"
 							><span class="fa-brands fa-github" aria-hidden="true"></span>
 							<span class="label">Github</span></a
 						>
 					</li>
-					<li><a href="#" class="button">Currículo</a></li>
+					<li>
+						<a href="#" title="Download Currículo" class="button"
+							><span
+								class="fa-regular fa-circle-down"
+								aria-hidden="true"
+							></span>
+							Currículo</a
+						>
+					</li>
+					<li id="light-theme-switch">
+						<button
+							type="button"
+							class="theme-toggle"
+							title="Light Mode"
+							onclick="switchTheme('light')"
+						>
+							<span class="fa-solid fa-sun" aria-hidden="true"></span>
+							<span class="label">Light Mode</span>
+						</button>
+					</li>
+					<li id="dark-theme-switch">
+						<button
+							type="button"
+							class="theme-toggle"
+							title="Dark Mode"
+							onclick="switchTheme('dark')"
+						>
+							<span class="fa-solid fa-moon" aria-hidden="true"></span>
+							<span class="label">Dark Mode</span>
+						</button>
+					</li>
 				</ul>
 				<a class="close" href="#" aria-label="Close main menu">
 					<span class="sr-only">Close main menu</span>
@@ -106,90 +141,120 @@
 
 		<div class="section-dkblue">
 			<section id="projects">
-				<h2>Projetos</h2>
+				<h2>Projetos Recentes</h2>
+
 				<article>
 					<div class="text">
-						<h4>Latest Project</h4>
-						<h3>Wall of Wonder</h3>
+						<h4>Inteligência Artificial</h4>
+						<h3>Detecção Facial</h3>
 						<p class="blackbox">
-							Description of the project. This should be fairly concise while
-							also describing the key components that you developed or worked
-							on. It can be as long as you need it to be but should at least be
-							a few sentences long. Be sure to include specific links anywhere
-							in the description. A link looks like <a href="#">this</a>, and
-							multiple links look <a href="#">like this</a> and
-							<a href="#">like this</a>.
+							<a
+								href="https://www.linkedin.com/posts/paloma-alves1006_azure-inteligaeanciaartificial-activity-6856335270158061568-slSl"
+								target="_blank"
+								>Projeto de detecção facial</a
+							>
+							utilizando a Inteligência Artificial da Microsoft Azure. Para
+							localização e análise facial foram usados algoritmos que retornam
+							as coordenadas de retângulo dos rostos humanos encontrados nas
+							imagens, bem como uma série de atributos relacionados a esses
+							rostos.
 						</p>
-						<h4>Technologies used include</h4>
+						<h4>Tecnologias utilizadas</h4>
 						<ul>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>SVG</li>
+							<li>Microsoft Azure</li>
+							<li>Python</li>
 						</ul>
 					</div>
 
 					<img
-						src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png"
-						alt="Screenshot of the Portfolio Item"
+						src="img/projeto_deteccao_facial.png"
+						alt="Screenshot de projeto de detecção facial"
 					/>
 				</article>
 
 				<article class="reverse">
 					<div class="text">
-						<h4>HTML Project</h4>
-						<h3>Magic Cube</h3>
+						<h4>Machine Learning</h4>
+						<h3>Previsão de Preço</h3>
 						<p class="blackbox">
-							Description of the project. This should be fairly concise while
-							also describing the key components that you developed or worked
-							on. It can be as long as you need it to be but should at least be
-							a few sentences long. Be sure to include specific links anywhere
-							in the description. Be sure to include specific links anywhere in
-							the description. Be sure to include specific links anywhere in the
-							description. Be sure to include specific links anywhere in the
-							description. A link looks like <a href="#">this</a>, and multiple
-							links look <a href="#">like this</a> and
-							<a href="#">like this</a>.
+							<a
+								href="https://www.linkedin.com/posts/paloma-alves1006_azure-cloud-machinelearning-activity-6853769730940112896-0Y_J"
+								target="_blank"
+								>Projeto de machine learning</a
+							>
+							com Microsoft Azure para previsão de preço de automóvel com base
+							nas características do veículo. Foi utilizado o designer do Azure
+							Machine Learning para treinar um modelo de Regressão Linear,
+							realizar a inferência e implantá-lo como um serviço.
 						</p>
-						<h4>Technologies used include</h4>
+						<h4>Tecnologias utilizadas</h4>
 						<ul>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>JavaScript</li>
+							<li>Microsoft Azure</li>
 						</ul>
 					</div>
 
 					<img
-						src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-5.png"
-						alt="Screenshot of the Portfolio Item"
+						src="img/projeto_machine_learning.png"
+						alt="Screenshot projeto de machine learning"
 					/>
 				</article>
 
 				<article>
 					<div class="text">
-						<h4>React Project</h4>
-						<h3>Amazing View</h3>
+						<h4>Análise de Dados</h4>
+						<h3>Construção de Pipeline de Dados</h3>
 						<p class="blackbox">
-							Description of the project. This should be fairly concise while
-							also describing the key components that you developed or worked
-							on. It can be as long as you need it to be but should at least be
-							a few sentences long. Be sure to include specific links anywhere
-							in the description. Be sure to include specific links anywhere in
-							the description. A link looks like <a href="#">this</a>, and
-							multiple links look <a href="#">like this</a> and
-							<a href="#">like this</a>.
+							<a
+								href="https://www.linkedin.com/posts/paloma-alves1006_sql-spark-bigdata-activity-6838217171865350144-MtN-"
+								target="_blank"
+								>Projeto de construção de pipeline de dados</a
+							>
+							com Spark e Python. O projeto consistiu em utilizar a API de
+							DataFrames do SparkSQL. No notebook foi realizado a leitura dos
+							dados, principais métodos de um DataFrame, principais funções
+							utilizadas nos dados, métodos de manipulação de dados, descritas
+							com exemplos.
 						</p>
-						<h4>Technologies used include</h4>
+						<h4>Tecnologias utilizadas</h4>
 						<ul>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>React</li>
-							<li>TypeScript</li>
+							<li>Spark</li>
+							<li>Python</li>
+							<li>Databricks</li>
 						</ul>
 					</div>
 
 					<img
-						src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-4.png"
-						alt="Screenshot of the Portfolio Item"
+						src="img/projeto_construcao_pipeline_dados.png"
+						alt="Screenshot de projeto de construção de pipeline de dados"
+					/>
+				</article>
+
+				<article class="reverse">
+					<div class="text">
+						<h4>Estatística</h4>
+						<h3>Análise Exploratória</h3>
+						<p class="blackbox">
+							<a
+								href="https://www.linkedin.com/posts/paloma-alves1006_igti-activity-6829491875167145984-XfiA"
+								target="_blank"
+								>Projeto de análise exploratória</a
+							>
+							das variáveis de uma amostra, aplicação de teste de hipóteses,
+							correlação, regressão e apresentação dos dados através de
+							gráficos. Foi utilizado o software open source RStudio que utiliza
+							a linguagem R, uma linguagem de programação para geração de
+							gráficos e cálculos estatísticos.
+						</p>
+						<h4>Tecnologias utilizadas</h4>
+						<ul>
+							<li>RStudio</li>
+							<li>Linguagem R</li>
+						</ul>
+					</div>
+
+					<img
+						src="img/projeto_analise_exploratoria.png"
+						alt="Screenshot de projeto de análise exploratória"
 					/>
 				</article>
 			</section>
@@ -228,12 +293,16 @@
 					<a
 						href="https://www.linkedin.com/in/paloma-alves1006/"
 						target="_blank"
+						title="LinkedIn"
 						><span class="fa-brands fa-linkedin" aria-hidden="true"></span>
 						<span class="sr-only">LinkedIn</span></a
 					>
 				</li>
 				<li>
-					<a href="https://github.com/palomaalves" target="_blank"
+					<a
+						href="https://github.com/palomaalves"
+						target="_blank"
+						title="Github"
 						><span class="fab fa-github" aria-hidden="true"></span>
 						<span class="sr-only">Github</span></a
 					>
@@ -241,6 +310,7 @@
 				<li>
 					<a
 						href="mailto:palomaalves@gmail.com?subject=Contato Website | Paloma Alves"
+						title="Enviar email"
 						><span class="fa-solid fa-envelope" aria-hidden="true"></span>
 						<span class="sr-only">Contato</span></a
 					>
