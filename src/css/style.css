@@ -2,6 +2,8 @@
 
 :root {
 	--white: #ffffff;
+	--black: #000000;
+	--yellow: #fcc946;
 	--light: #d8dbe0;
 	--dark: #28292c;
 	--link: rgb(27, 129, 112);
@@ -106,7 +108,7 @@ img {
 	width: 189px;
 	height: 189px;
 	object-fit: cover;
-	padding: 0.6rem;
+	padding: 0.5rem;
 	border: 2px dotted var(--primary);
 	border-radius: 50%;
 }
@@ -185,7 +187,7 @@ img {
 
 #projects img {
 	margin: 2rem 0 4rem 0;
-	border: 8px solid var(--primary);
+	border: 4px solid var(--primary);
 	border-radius: 12px;
 	box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
 		rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
@@ -439,12 +441,12 @@ footer small {
 	}
 
 	nav #light-theme-switch:hover span {
-		color: #fbe5ab;
+		color: var(--yellow);
 		transform: rotate(360deg);
 	}
 
 	nav #dark-theme-switch:hover span {
-		color: #000000;
+		color: var(--black);
 		transform: rotate(360deg);
 	}
 
