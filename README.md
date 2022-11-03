@@ -4,10 +4,16 @@
 
 Online portfolio of Paloma Alves, computer science student and data science enthusiast.
 
+### Link
+
+[https://lucianoayres.github.io/website-paloma-alves/](https://lucianoayres.github.io/website-paloma-alves/)
+
 ## Features
 
 - Dark/Light theme switcher
 - Responsive layout for web and mobile
+- [FontAwesome](https://fontawesome.com/) SVG Icons
+- SVG Illustration by [manypixels.co](https://www.manypixels.co/)
 
 ## Screenshot
 
@@ -18,5 +24,3 @@ Online portfolio of Paloma Alves, computer science student and data science enth
 - HTML
 - CSS
 - Vanilla JavaScript
-
-
