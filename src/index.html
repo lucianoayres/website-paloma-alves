@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,6 +15,26 @@
 		Machine Learning, Python"
 		/>
 		<meta name="author" content="Paloma Alves" />
+
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./assets/img/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/img/favicon-32x32.png?v=1"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./assets/img/favicon-16x16.png?v=1"
+		/>
+		<link rel="manifest" href="./site.webmanifest" />
+
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -26,7 +46,9 @@
 			defer
 			src="https://kit.fontawesome.com/ff2d0f3281.js"
 			crossorigin="anonymous"
+			utils
 		></script>
+
 		<script defer src="./js/main.js"></script>
 	</head>
 	<body data-theme="dark">
@@ -35,7 +57,7 @@
 				<span class="sr-only">Open main menu</span>
 				<span class="fas fa-bars" aria-hidden="true"></span>
 			</a>
-			<nav id="navbar">
+			<nav id="navbar" class="navbar">
 				<ul>
 					<li>
 						<h1>
@@ -76,7 +98,11 @@
 						>
 					</li>
 					<li class>
-						<a href="#" title="Download Currículo" class="button"
+						<a
+							href="./downloads/CV_Paloma_Alves.pdf"
+							download
+							title="Download Currículo"
+							class="button"
 							><span
 								class="fa-regular fa-circle-down"
 								aria-hidden="true"
@@ -117,7 +143,7 @@
 			<div class="intro--profile">
 				<img
 					class="intro--avatar"
-					src="./img/paloma_alves.jpg"
+					src="./assets/img/paloma_alves.jpg"
 					alt="Paloma Alves"
 				/>
 				<div class="intro--name">
@@ -167,7 +193,7 @@
 					</div>
 
 					<img
-						src="img/projeto_deteccao_facial.png"
+						src="./assets/img/projeto_deteccao_facial.png"
 						alt="Screenshot de projeto de detecção facial"
 					/>
 				</article>
@@ -194,7 +220,7 @@
 					</div>
 
 					<img
-						src="img/projeto_machine_learning.png"
+						src="./assets/img/projeto_machine_learning.png"
 						alt="Screenshot projeto de machine learning"
 					/>
 				</article>
@@ -224,7 +250,7 @@
 					</div>
 
 					<img
-						src="img/projeto_construcao_pipeline_dados.png"
+						src="./assets/img/projeto_construcao_pipeline_dados.png"
 						alt="Screenshot de projeto de construção de pipeline de dados"
 					/>
 				</article>
@@ -253,7 +279,7 @@
 					</div>
 
 					<img
-						src="img/projeto_analise_exploratoria.png"
+						src="./assets/img/projeto_analise_exploratoria.png"
 						alt="Screenshot de projeto de análise exploratória"
 					/>
 				</article>

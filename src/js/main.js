@@ -1,10 +1,10 @@
-function addCopyrightTextToFooter() {
+function addCopyrightTextToFooter(sitename) {
 	const CURRENT_YEAR = new Date().getFullYear()
 
 	const pTag = document.createElement('p')
 	const smallTag = document.createElement('small')
 	const footerText = document.createTextNode(
-		`© ${CURRENT_YEAR} Paloma Alves. Todos os direitos reservados.`
+		`© ${CURRENT_YEAR} ${sitename}. Todos os direitos reservados.`
 	)
 
 	smallTag.appendChild(footerText)
@@ -36,12 +36,6 @@ function getThemeSwitchButton(theme) {
 	return document.body.querySelector(`#${theme}-theme-switch`)
 }
 
-function setElementDisplay(element, shouldDisplay) {
-	shouldDisplay
-		? (element.style.display = 'none')
-		: (element.style.display = 'initial')
-}
-
 function initTheme() {
 	const currentSwitchThemeButton = getCurrentSwitchThemeButton()
 	currentSwitchThemeButton.style.display = 'none'
@@ -49,7 +43,7 @@ function initTheme() {
 
 function main() {
 	initTheme()
-	addCopyrightTextToFooter()
+	addCopyrightTextToFooter('Paloma Alves')
 }
 
 main()

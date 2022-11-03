@@ -23,6 +23,7 @@ body[data-theme='light'] {
 	--sans: Oxygen, sans-serif;
 	--animation-transition-0: 0.2s ease-in-out;
 	--content-max-width: 1200px;
+	--bg-default-opacity: 0.4;
 }
 
 body[data-theme='dark'] {
@@ -38,6 +39,7 @@ body[data-theme='dark'] {
 	--sans: Oxygen, sans-serif;
 	--animation-transition-0: 0.2s ease-in-out;
 	--content-max-width: 1200px;
+	--bg-default-opacity: 0.2;
 }
 /* border box model */
 html {
@@ -94,6 +96,7 @@ img {
 	max-width: var(--content-max-width);
 	margin: 0 auto;
 	text-align: center;
+	background-image: none;
 }
 
 #intro .intro--profile {
@@ -134,6 +137,13 @@ img {
 	font-size: 4rem;
 	color: var(--primary);
 	display: block; /* use this to make the span content act like a block and break the line*/
+	background-image: linear-gradient(45deg, var(--primary), var(--secondary));
+	background-size: 100%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
 }
 #intro h2 {
 	font-size: 2.4rem;
@@ -400,7 +410,7 @@ footer small {
 	font-size: 1rem;
 }
 
-/* If the screen min-width is higher than 550px applies this style */
+/* If the screen min-width is 550px or higher */
 
 @media (min-width: 550px) {
 	.hamburger,
@@ -459,10 +469,16 @@ footer small {
 		padding-top: 4rem;
 		padding-bottom: 8rem;
 		text-align: left;
+		background-image: url(../assets/svg/intro-background.svg);
+		background-size: 660px 660px;
+		background-repeat: no-repeat;
+		background-position: right top;
 	}
+
 	#intro .intro--profile {
 		flex-direction: row;
 	}
+
 	#intro .intro--avatar {
 		width: 136px;
 		height: 136px;
@@ -475,7 +491,7 @@ footer small {
 	}
 	article {
 		display: grid;
-		grid-template-columns: repeat(10, 1fr); /* the same as 1fr, 1fr */
+		grid-template-columns: repeat(10, 1fr);
 		gap: 1rem;
 	}
 
@@ -506,7 +522,8 @@ footer small {
 	}
 }
 
-/* If the screen min-width is higher than 850px applies this style */
+/* If the screen min-width is 850px or higher */
+
 @media (min-width: 850px) {
 	nav {
 		max-width: var(--content-max-width);
