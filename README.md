@@ -1,4 +1,4 @@
-# Paloma Alves Online Portfolio
+# Website Paloma Alves
 
 ![image](https://user-images.githubusercontent.com/20209393/199631603-4c466e62-4c9c-42a8-801c-a090e8873a47.png)
 
