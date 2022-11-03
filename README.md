@@ -15,6 +15,7 @@ Online portfolio of Paloma Alves, computer science student and data science enth
 - Dark/Light theme switcher
 - CSS-Only hamburguer menu
 - Responsive layout for web and mobile
+- Deployment with GitHub Actions
 
 ## Technologies used
 
